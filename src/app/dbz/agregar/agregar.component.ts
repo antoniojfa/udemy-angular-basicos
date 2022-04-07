@@ -1,4 +1,4 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Personaje } from '../interfaces/dbz.interfaces';
 import { DbzService } from '../services/dbz.service';
 
@@ -7,8 +7,6 @@ import { DbzService } from '../services/dbz.service';
   templateUrl: './agregar.component.html'
 })
 export class AgregarComponent {
-
-  //@Input()  personajes: Personaje[] = [];
 
   @Input() nuevo: Personaje = {
     nombre: '',
